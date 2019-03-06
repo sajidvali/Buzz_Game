@@ -1,0 +1,22 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class ChangeMusicVolume : MonoBehaviour {
+
+         public Slider Volume;
+    public AudioSource myMusic ;
+
+    // Update is called once per frame
+
+    void Update () {
+        myMusic.volume = GameObject.Find("MusicManager").GetComponent<AudioSource>().volume = Volume.value;
+         //myMusic.volume=Volume.value;
+		
+	}
+
+
+
+
+    }
